@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Application</title>
+    <link rel="stylesheet" href="css/quote.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <script src="js/loadNavbar.js" defer></script>
+    <script src="js/loadFooter.js" defer></script>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <div class="quote-container">
+    <div class="form-container">
+        <h2>Fill This Form for The Best Quote</h2>
+        <form id="constructionForm" action="" method="POST">
+            <div class="input-con">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="project" name="description" placeholder="Project Description" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="number" id="budget" name="budget" placeholder="Budget" required>
+                </div>
+                <div class="form-group">
+                    <label>Expected Start Date</label>
+                    <input type="date" id="start-date" name="s_date" placeholder="Expected Start Date" required>
+                </div>
+                <div class="form-group">
+                    <label>Expected End Date</label>
+                    <input type="date" id="end-date" name="e_date" placeholder="Expected End Date" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="location" name="location" placeholder="Project Location" required>
+                </div>
+                <div class="button">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+    <div id="footer-placeholder"></div>
+    <script src="js/navbar.js"></script>
+    </body>
+    </html>

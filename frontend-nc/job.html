@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NC | Job</title>
+    <link rel="stylesheet" href="css/job.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <div class="job-container">
+        <div class="apply-box">
+            <h1>Job Application</h1>
+            <form method="POST" action="/submit-job-application">
+                <div class="form-container">
+                    <div class="form-control">
+                        <input type="text" id="first-name" name="name" placeholder="Enter name">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" id="age" name="age" placeholder="Enter Age">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" id="email" name="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" id="mobile" name="mobile" placeholder="Enter Mobile No">
+                    </div>
+                    <div class="form-control">
+                        <select class="select" name="role" id="job-role">
+                            <option value="" disabled selected>Select Job Role</option>
+                            <option value="engineer">Engineer</option>
+                            <option value="supervisor">Super Visor</option>
+                            <option value="mason">Mason</option>
+                            <option value="carpenter">Carpentor</option>
+                            <option value="electrician">Electrician</option>
+                            <option value="plumber">Plumber</option>
+                            <option value="helper">Helper</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" id="experience" name="experience" placeholder="Experience">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" id="city" name="city" placeholder="Enter City">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" id="pincode" name="pincode" placeholder="Pincode">
+                    </div>
+                    <div class="form-control">
+                        <label for="apply-date">Registration Date</label>
+                        <input type="date" id="apply-date" name="date" value="2024-10-26">
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">Apply Now</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/loadNavbar.js"></script>
+    <script src="js/loadFooter.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>

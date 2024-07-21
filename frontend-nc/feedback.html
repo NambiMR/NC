@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/feedback.css" />
+    <title>Feedback Form</title>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <div class="wrap">
+        <div class="rating-container">
+        <table>
+            <form action="" method="POST">
+                <tr>
+                    <td colspan="2" class="rate">
+                        <h1>Feedback form</h1> 
+                        <label>How do you rate your overall experience</label>
+                        <div class="rating">
+                            <input type="radio" name="Rate" value="good" id="good"><label for="good">Good</label>
+                            <input type="radio" name="Rate" value="average" id="average"><label for="average">Average</label>
+                            <input type="radio" name="Rate" value="bad" id="bad"><label for="bad">Bad</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Full Name*</label>
+                        <input type="text" name="Name" class="txt" required>
+                    </td>
+                    <td>
+                        <label>Email*</label>
+                        <input type="email" name="Email" class="txt" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Age*</label>
+                        <input type="number" name="Age" class="txt" required>
+                    </td>
+                    <td>
+                        <label>Phone*</label>
+                        <input type="tel" name="Phone" class="txt" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Message*</label>
+                        <textarea class="textarea" name="Message" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" class="btn">Submit</button></td>
+                </tr>
+            </form>
+        </table>
+        </div>
+    </div>
+    <div id="footer-placeholder"></div>
+
+    <script src="js/loadNavbar.js"></script>
+    <script src="js/loadFooter.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    background: #0A2558;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1001; /* Ensure it stays above other content */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    margin: 0 15px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    width: 130px;
+    height: auto;
+}
+
+.hideOnMobile {
+    display: none;
+}
+
+.hideOnMobile a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-button {
+    margin-left: auto;
+    color: #faf9f9;
+}
+
+.menu-button svg {
+    cursor: pointer;
+}
+
+.sidebar {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background: #0A2558;
+    padding-top: 20px;
+    z-index: 1002; /* Ensure it stays above other content */
+}
+
+.sidebar li {
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.sidebar li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar li a:hover,
+.sidebar li a.active {
+    color: #f18930;
+    text-decoration: underline;
+}
+
+.hideOnMobile a:hover,
+.hideOnMobile i:hover,
+.hideOnMobile a.active {
+    color: #f18930;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .hideOnMobile {
+        display: block;
+    }
+    .menu-button {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hideOnMobile a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 920px) {
+    .hideOnMobile a {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media (min-width: 800px) {
+    .sidebar {
+        display: none !important;
+    }
+}

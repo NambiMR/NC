@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('../images/img2.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    /* background-color: rgba(40, 37, 37, 0.5); */
+    backdrop-filter: blur(3px);
+    
+}
+
+.lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 180px;
+}
+.pro-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.pro-container .pro-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 310px;
+    height: 280px;
+    background: #0A2558;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    margin:20px 10px ;
+    transition: 1s;
+}
+.pro-container .pro-card:hover {
+    height: 300px;
+}
+.pro-container .pro-card .imgbx {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 1s;
+}
+.pro-container .pro-card:hover .imgbx {
+    top: -100px;
+    transform: scale(0.75);
+    box-shadow: 0 15px 45px rgb(0, 0, 0, 0.2);
+}
+.pro-container .pro-card .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pro-container .pro-card .pro-content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+    transition: 1s;
+}
+.pro-container .pro-card:hover .pro-content {
+    top: 130px;
+    height: 250px;
+}
+.pro-container .pro-card .pro-content h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #f18930;
+}
+.pro-container .pro-card .pro-content p {
+    color: white;
+    font-size: 1.05em;
+}
